@@ -9,22 +9,21 @@ void print(const vector<int>& list);
 
 int main() {
 
-    vector<int> v(5);  // vector to be sorted
+    vector<int> v (5);  // vector to be sorted
     // initialize v
-    /* your code here */
+    v={6,1,3,2,1};
 
-
-    // print the unsorted v
-    /* your code here */
-
+// print the unsorted v
+    cout<<"Unsorted v: ";
+    print(v);
 
     // sort v
     /* your code here */
 
 
     // print the sorted v
-    /* your code here */
-
+    cout<<"Sorted v: ";
+    print(v);
 
     return 0;
 }
@@ -34,7 +33,7 @@ int main() {
 //Max sort function
 void maxSort(vector<int>& list){
     for(int i=list.size()-1;i>=0;i--){
-        /*complete the code*/
+        if(list.at(0)>)/*complete the code*/
 
         for(int j=0;j<=i;j++){
             /*complete the code*/
@@ -51,6 +50,9 @@ void swap(int& a, int&b){
 
 // print function
 void print(const vector<int>& list){
-    /*your code here*/
+    for (int i=0;i<list.size();i++) {
+        cout << list.at(i) << " ";
+    }
+    cout<<endl;
 }
 
