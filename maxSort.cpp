@@ -18,8 +18,7 @@ int main() {
     print(v);
 
     // sort v
-    /* your code here */
-
+    maxSort(v);
 
     // print the sorted v
     cout<<"Sorted v: ";
@@ -33,19 +32,23 @@ int main() {
 //Max sort function
 void maxSort(vector<int>& list){
     for(int i=list.size()-1;i>=0;i--){
-        if(list.at(0)>)/*complete the code*/
-
+        int currMax=0;
         for(int j=0;j<=i;j++){
-            /*complete the code*/
-
+            if (list.at(j)>=list.at(currMax)) {
+                currMax = j;
+            }
+                swap(list.at(currMax), list.at(i));
+                /*complete the code*/
+            }
         }
-        /*complete the code*/
     }
-}
 
 // swap function
 void swap(int& a, int&b){
-    /*your code here*/
+   int temp;
+    temp=a;
+    a=b;
+    b=temp;
 }
 
 // print function
